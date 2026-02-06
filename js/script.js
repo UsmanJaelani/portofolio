@@ -5,6 +5,37 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
+  // --- NEW: Hamburger Menu Logic ---
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+
+      // Ubah icon bars jadi X saat menu terbuka
+      const icon = hamburger.querySelector("i");
+      if (navLinks.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+    });
+
+    // Tutup menu saat link diklik
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        const icon = hamburger.querySelector("i");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      });
+    });
+  }
+  // -------------------------------
+
   // Intersection Observer for Scroll Animations
   const observerOptions = {
     root: null,
@@ -28,9 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     });
   });
 });
@@ -41,7 +77,8 @@ function openModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = "block";
-    document.body.style.overflow = "hidden"; // Disable scroll background
+    // Disable scroll background di body saat modal terbuka
+    document.body.style.overflow = "hidden";
   }
 }
 
@@ -49,7 +86,8 @@ function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = "none";
-    document.body.style.overflow = "auto"; // Enable scroll
+    // Enable scroll lagi saat modal ditutup
+    document.body.style.overflow = "auto";
   }
 }
 
