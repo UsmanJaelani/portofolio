@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           icon: "fa-solid fa-code",
-          title: "CodeCamp Software Engineer",
+          title: "CodingCamp Software Engineer",
           issuer: "RevoU (2026)",
         },
       ],
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     contact: {
       title: "Siap Berkontribusi.",
-      sub: "Terbuka untuk kesempatan Magang (3-6 Bulan).<br>Tersedia untuk peran Web Development atau Data Analyst.",
+      sub: "Terbuka untuk kesempatan Magang.<br>Tersedia untuk peran Web Development atau Data Analyst.",
       links: [
         {
           href: "mailto:musmanaljaelani@gmail.com",
@@ -489,3 +489,4 @@ window.onclick = function (event) {
     document.body.style.overflow = "auto";
   }
 };
+
