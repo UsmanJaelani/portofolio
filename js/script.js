@@ -138,13 +138,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     experience: {
       title: "Pengalaman Profesional",
-      role: "Admin Operasional (Paruh Waktu)",
-      company: "Eka Jaya Abadi (Usaha Keluarga) | 2022 – Sekarang",
+      role: "Data Entry (Paruh Waktu)",
+      company: "Eka Jaya Abadi (Usaha Keluarga)",
       details: [
         {
           icon: "fa-coins",
           title: "Akurasi Keuangan",
-          desc: "Mengelola pencatatan arus kas harian dan pelaporan keuangan bulanan dengan akurasi 100%.",
+          desc: "Mengelola pencatatan arus kas harian dan pelaporan keuangan bulanan dengan akurasi tinggi.",
         },
         {
           icon: "fa-file-invoice",
@@ -489,4 +489,5 @@ window.onclick = function (event) {
     document.body.style.overflow = "auto";
   }
 };
+
 
