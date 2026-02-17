@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           icon: "fa-user-tie",
           title: "Profesional",
-          desc: "Berpengalaman dalam manajemen administrasi usaha, menjunjung tinggi integritas data, akurasi keuangan, dan disiplin operasional.",
+          desc: "Berpengalaman dalam manajemen administrasi, menjunjung tinggi integritas data, akurasi keuangan, dan disiplin operasional.",
         },
         {
           icon: "fa-crosshairs",
@@ -138,8 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     experience: {
       title: "Pengalaman Profesional",
-      role: "Data Entry (Paruh Waktu)",
-      company: "Eka Jaya Abadi (Usaha Keluarga)",
+      role: "Data Entry",
       details: [
         {
           icon: "fa-coins",
@@ -149,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           icon: "fa-file-invoice",
           title: "Manajemen Data",
-          desc: "Menangani penggajian karyawan dan pelacakan biaya operasional menggunakan Microsoft Excel.",
+          desc: "Menangani digitalisasi data dan pelacakan biaya operasional menggunakan Microsoft Excel.",
         },
         {
           icon: "fa-clipboard-check",
@@ -489,5 +488,6 @@ window.onclick = function (event) {
     document.body.style.overflow = "auto";
   }
 };
+
 
 
