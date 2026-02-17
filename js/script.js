@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     experience: {
       title: "Pengalaman Profesional",
       role: "Data Entry",
-      company: ""
+      company: "Menginput data ke sistem komputer."
       details: [
         {
           icon: "fa-coins",
@@ -489,6 +489,7 @@ window.onclick = function (event) {
     document.body.style.overflow = "auto";
   }
 };
+
 
 
 
